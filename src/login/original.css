@@ -1,0 +1,59 @@
+:root {
+    /* change colors */
+
+    --pf-global--BackgroundColor--100: #fff;
+    --pf-global--BackgroundColor--150: #fafafa;
+    --pf-global--BackgroundColor--200: #f0f0f0;
+    --pf-global--BackgroundColor--light-100: #fff;
+    --pf-global--BackgroundColor--light-200: #fafafa;
+    --pf-global--BackgroundColor--light-300: #f0f0f0;
+    --pf-global--BackgroundColor--dark-100: #151515;
+    --pf-global--BackgroundColor--dark-200: #3c3f42;
+    --pf-global--BackgroundColor--dark-300: #212427;
+    --pf-global--BackgroundColor--dark-400: #4f5255;
+    --pf-global--BackgroundColor--dark-transparent-100: rgba(3, 3, 3, 0.62);
+    --pf-global--BackgroundColor--dark-transparent-200: rgba(3, 3, 3, 0.32);
+    /* Text color */
+    --pf-global--Color--100: #151515;
+    --pf-global--Color--200: #6a6e73;
+    --pf-global--Color--300: #3c3f42;
+    --pf-global--Color--400: #8a8d90;
+    --pf-global--Color--light-100: #fff;
+    --pf-global--Color--light-200: #f0f0f0;
+    --pf-global--Color--light-300: #d2d2d2;
+    --pf-global--Color--dark-100: #151515;
+    --pf-global--Color--dark-200: #6a6e73;
+    /* active */
+    --pf-global--active-color--100: #06c;
+    --pf-global--active-color--200: #bee1f4;
+    --pf-global--active-color--300: #2b9af3;
+    --pf-global--active-color--400: #73bcf7;
+    /* disabled */
+    --pf-global--disabled-color--100: #6a6e73;
+    --pf-global--disabled-color--200: #d2d2d2;
+    --pf-global--disabled-color--300: #f0f0f0;
+    /* primary */
+    --pf-global--primary-color--100: #06c;
+    --pf-global--primary-color--200: #004080;
+    --pf-global--primary-color--light-100: #73bcf7;
+    --pf-global--primary-color--dark-100: #06c;
+    /* secondary */
+    --pf-global--secondary-color--100: #6a6e73;
+    /* default */
+    --pf-global--default-color--100: #73c5c5;
+    --pf-global--default-color--200: #009596;
+    --pf-global--default-color--300: #003737;
+    /* success */
+    --pf-global--success-color--100: #3e8635;
+    --pf-global--success-color--200: #1e4f18;
+    /* info */
+    --pf-global--info-color--100: #2b9af3;
+    --pf-global--info-color--200: #002952;
+    /* warning */
+    --pf-global--warning-color--100: #f0ab00;
+    --pf-global--warning-color--200: #795600;
+    /* danger */
+    --pf-global--danger-color--100: #c9190b;
+    --pf-global--danger-color--200: #a30000;
+    --pf-global--danger-color--300: #470000;
+}
