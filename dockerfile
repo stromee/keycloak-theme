@@ -11,7 +11,6 @@ RUN apt-get update && \
 
 RUN npm i yarn -g
 
-
 # Verify installations
 RUN mvn -v && \
     node -v && \
@@ -23,3 +22,6 @@ COPY . .
 
 RUN yarn
 RUN yarn build-keycloak-theme
+
+# Keep the container running
+CMD ["tail", "-f", "/dev/null"]
