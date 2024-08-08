@@ -18,17 +18,13 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Build Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          push: false  # Don't push the Docker image
-          tags: temp-image:latest
+        run: docker build -t temp-image:latest .
 
       - name: Create dist_keycloak directory
         run: mkdir -p ./dist_keycloak
 
       - name: Copy JAR file from Docker image
-        run: docker run --rm -v ${{ github.workspace }}/dist_keycloak:/dist temp-image:latest cp ./dist_keycloak/keycloak-theme-for-kc-22-and-above.jar /dist/keycloak-theme-for-kc-22-and-above.jar
+        run: docker run --rm -v ${{ github.workspace }}/dist_keycloak:/dist temp-image:latest cp /path/to/your/jar/file.jar /dist/keycloak-theme-for-kc-22-and-above.jar
 
       - name: List files in dist_keycloak
         run: ls -l ./dist_keycloak
