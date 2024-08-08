@@ -32,7 +32,7 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: dist_keycloak-artifacts
-                  path: dist_keycloak/keycloak-theme-for-kc-22-and-above.jar
+                  path: ./dist_keycloak/keycloak-theme-for-kc-22-and-above.jar
 
             - name: Add git note
               run: |
