@@ -28,11 +28,15 @@ jobs:
                   push: true
                   tags: ghcr.io/${{ github.repository }}:${{ github.sha }}
 
+            - name: List files in dist_keycloak
+              run: ls -l ./dist_keycloak
+
             - name: Upload dist_keycloak artifacts to release
               uses: actions/upload-artifact@v2
               with:
                   name: dist_keycloak-artifacts
                   path: ./dist_keycloak/keycloak-theme-for-kc-22-and-above.jar
+                  if-no-files-found: warn
 
             - name: Add git note
               run: |
