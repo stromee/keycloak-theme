@@ -9,7 +9,6 @@ export default defineConfig({
         keycloakify({
             accountThemeImplementation: "none",
             artifactId:"keycloakify-theme",
-            keycloakifyBuildDirPath: "build",
         })
     ]
 });
