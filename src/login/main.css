@@ -24,10 +24,17 @@
   --stromee-navy-300: #24325b;
   --stromee-navy-400: #2c3c6d;
 
-  --background-color-primary: #f8f8f8;
+  --base-grey-300: #a3a6a6;
+  --base-grey-600: #f8f8f8;
+
+  --background-color-primary: var(--base-grey-600);
   --background-color-primary-dark: var(--stromee-navy-100);
   --background-color-secondray: #ffffff;
   --background-container-color: #1b4650;
+
+  --action-active-color: var(--stromee-green-100);
+  --action-disabled-color: var(--base-grey-600);
+  --action-inactive-color: var(--base-grey-300);
 
   --success-color: #6ddc91;
   --info-color: #0ff;
@@ -75,6 +82,7 @@
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* disabled */
   --pf-global--disabled-color--100: rgb(163, 166, 166);
+  --pf-global--disabled-color--200: var(--action-disabled-color);
   --pf-global--disabled-color--300: #0ff;
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* primary */
@@ -100,7 +108,7 @@
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* danger */
   --pf-global--danger-color--100: var(--error-color);
-  --pf-global--danger-color--200: #0ff;
+  --pf-global--danger-color--200: var(--error-color);
   --pf-global--danger-color--300: #0ff;
 
   /* change fontSizes */
@@ -139,7 +147,6 @@ body {
   background-color: var(--pf-global--BackgroundColor--100);
   border: none;
   border-radius: 4px;
-  color: red;
   color: var(--stromee-navy-100);
 }
 
@@ -178,4 +185,22 @@ body {
   /* 0px 2px 6px 0px #1d244540; */
   box-shadow: 0px 2px 6px 0px rgba(29, 36, 69, 0.25);
   background-color: var(--pf-global--primary-color--100);
+}
+
+/* Login with google kein plan wie das aussieht und obs tut*/
+.kcFormSocialAccountListButtonClass {
+  background-color: #4285f4; /* Google's blue */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.kcFormSocialAccountListButtonClass:hover {
+  background-color: #357ae8; /* Slightly darker blue for hover effect */
 }
