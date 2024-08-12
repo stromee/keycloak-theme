@@ -13,51 +13,74 @@
   font-style: normal;
 }
 :root {
+  /* set default colors */
+  --stromee-green-100: #6ddc91;
+  --stromee-green-200: #84e1a2;
+  --stromee-green-300: #98e6b2;
+  --stromee-green-400: #adebc1;
+
+  --stromee-navy-100: #1d2445;
+  --stromee-navy-200: #1d2849;
+  --stromee-navy-300: #24325b;
+  --stromee-navy-400: #2c3c6d;
+
+  --background-color-primary: #f8f8f8;
+  --background-color-primary-dark: var(--stromee-navy-100);
+  --background-color-secondray: #ffffff;
+  --background-container-color: #1b4650;
+
+  --success-color: #6ddc91;
+  --info-color: #0ff;
+  --warning-color: #f0e7da;
+  --error-color: #b33349;
+
   /* change colors */
   /* background */
-  --pf-global--BackgroundColor--100: rgb(248, 248, 248);
+  --pf-global--BackgroundColor--100: var(--background-color-primary);
   --pf-global--BackgroundColor--150: #0ff;
   --pf-global--BackgroundColor--200: #0ff;
   /* input Field */
-  --pf-global--BackgroundColor--light-100: rgb(248, 248, 248);
+  --pf-global--BackgroundColor--light-100: var(--background-color-secondray);
   --pf-global--BackgroundColor--light-200: #0ff;
   --pf-global--BackgroundColor--light-300: #0ff;
   /* dropdown:hover */
-  --pf-global--BackgroundColor--light-300: #0ff;
-  --pf-global--BackgroundColor--dark-100: rgb(29, 36, 69);
-  --pf-global--BackgroundColor--dark-200: #0ff;
-  --pf-global--BackgroundColor--dark-300: #0ff;
-  --pf-global--BackgroundColor--dark-400: #0ff;
+  --pf-global--BackgroundColor--light-300: var(--background-color-secondray);
+  --pf-global--BackgroundColor--dark-100: var(--stromee-navy-100);
+  --pf-global--BackgroundColor--dark-200: var(--stromee-navy-200);
+  --pf-global--BackgroundColor--dark-300: var(--stromee-navy-300);
+  --pf-global--BackgroundColor--dark-400: var(--stromee-navy-400);
   --pf-global--BackgroundColor--dark-transparent-100: rgba(3, 3, 3, 0.62);
+  --pf-global--BackgroundColor--dark-transparent-200: rgba(3, 3, 3, 0.32);
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* Text color */
   /* Header */
-  --pf-global--Color--100: rgb(29, 36, 69);
+  --pf-global--Color--100: var(--stromee-navy-100);
   /* language */
-  --pf-global--Color--200: #0ff;
-  --pf-global--Color--300: #0ff;
-  --pf-global--Color--400: #0ff;
+  --pf-global--Color--200: var(--stromee-navy-200);
+  --pf-global--Color--300: var(--stromee-navy-300);
+  --pf-global--Color--400: var(--stromee-navy-400);
   /* on-primary */
-  --pf-global--Color--light-100: rgb(248, 248, 248);
-  --pf-global--Color--light-200: #0ff;
-  --pf-global--Color--light-300: #0ff;
-  --pf-global--Color--dark-100: #0ff;
+  --pf-global--Color--light-100: var(--stromee-navy-100);
+  --pf-global--Color--light-200: var(--stromee-navy-200);
+  --pf-global--Color--light-300: var(--stromee-navy-300);
+  --pf-global--Color--dark-100: var(--stromee-navy-100);
   /* icon */
-  --pf-global--Color--dark-200: #0ff;
+  --pf-global--Color--dark-200: var(--stromee-navy-200);
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* active */
-  --pf-global--active-color--100: rgb(109, 220, 145);
-  --pf-global--active-color--300: #0ff;
-  --pf-global--active-color--400: rgb(109, 220, 145);
+  --pf-global--active-color--100: var(--stromee-green-100);
+  --pf-global--active-color--200: var(--stromee-green-200);
+  --pf-global--active-color--300: var(--stromee-green-300);
+  --pf-global--active-color--400: var(--stromee-green-400);
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* disabled */
   --pf-global--disabled-color--100: rgb(163, 166, 166);
   --pf-global--disabled-color--300: #0ff;
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* primary */
-  --pf-global--primary-color--100: rgb(109, 220, 145);
-  --pf-global--primary-color--light-100: rgb(109, 220, 145);
-  --pf-global--primary-color--dark-100: rgb(49, 55, 81);
+  --pf-global--primary-color--100: var(--stromee-green-100);
+  --pf-global--primary-color--light-100: var(--stromee-green-100);
+  --pf-global--primary-color--dark-100: var(--stromee-navy-100);
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* secondary */
   --pf-global--secondary-color--100: #0ff;
@@ -67,7 +90,7 @@
   --pf-global--default-color--300: #0ff;
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* success */
-  --pf-global--success-color--100: rgb(109, 220, 145);
+  --pf-global--success-color--100: var(--stromee-green-100);
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* info */
   --pf-global--info-color--100: #0ff;
@@ -76,8 +99,9 @@
   --pf-global--warning-color--100: rgb(240, 231, 218);
   /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* danger */
-  --pf-global--danger-color--100: rgb(179, 51, 73);
-  --pf-global--danger-color--300: rgb(179, 51, 73);
+  --pf-global--danger-color--100: var(--error-color);
+  --pf-global--danger-color--200: #0ff;
+  --pf-global--danger-color--300: #0ff;
 
   /* change fontSizes */
   --pf-global--FontSize--4xl: 2.25rem;
@@ -130,6 +154,7 @@ body {
 .kcFormPasswordVisibilityButtonClass {
   border-radius: 1000px;
   border: none;
+  background-color: red;
 }
 
 .kcButtonClass {
@@ -140,6 +165,7 @@ body {
 .kcFormPasswordVisibilityIconShow {
   border: none;
 }
+
 
 .kcButtonClass:hover {
   /* 0px 2px 6px 0px #1d244540; */
