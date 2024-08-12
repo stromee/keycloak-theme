@@ -134,38 +134,45 @@ body {
 .kcHeaderWrapperClass {
   color: var(--pf-global--Color--100);
 }
+
 .kcFormCardClass {
   background-color: var(--pf-global--BackgroundColor--100);
   border: none;
+  border-radius: 4px;
+  color: red;
+  color: var(--stromee-navy-100);
 }
 
 .kcInputClass {
   border-radius: 1000px;
   border: none;
-  /* Drop Shadow: [5, 18, 56, 0.10] | Offset: 0, 0 | Spread: 0 | Blur: 5 */
-  /* box-shadow: 5px 18px 56px rgba(0, 0, 0, 0.1); */
 }
 
 .kcInputGroup {
-  background-color: red;
   background: none;
+  position: relative;
 }
 
 .kcFormPasswordVisibilityButtonClass {
-  border-radius: 1000px;
+  background-color: var(--background-color-secondray);
   border: none;
-  background-color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  border-radius: 1000px;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.kcFormPasswordVisibilityButtonClass:hover {
+  box-shadow: 0px 2px 6px 0px rgba(29, 36, 69, 0.25);
 }
 
 .kcButtonClass {
   border-radius: 1000px;
   box-shadow: 0px 0px 5px 0px rgba(29, 36, 69, 0.1);
 }
-
-.kcFormPasswordVisibilityIconShow {
-  border: none;
-}
-
 
 .kcButtonClass:hover {
   /* 0px 2px 6px 0px #1d244540; */
