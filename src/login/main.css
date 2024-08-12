@@ -1,64 +1,105 @@
+/* medium */
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("/fonts/TTF/AnyConv.com__Gilroy-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* semibold */
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("/fonts/TTF/AnyConv.com__Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   /* change colors */
   /* background */
   --pf-global--BackgroundColor--100: rgb(248, 248, 248);
   --pf-global--BackgroundColor--150: #0ff;
   --pf-global--BackgroundColor--200: #0ff;
-  --pf-global--BackgroundColor--light-100: rgb(255, 255, 255);
+  /* input Field */
+  --pf-global--BackgroundColor--light-100: rgb(248, 248, 248);
   --pf-global--BackgroundColor--light-200: #0ff;
+  --pf-global--BackgroundColor--light-300: #0ff;
+  /* dropdown:hover */
   --pf-global--BackgroundColor--light-300: #0ff;
   --pf-global--BackgroundColor--dark-100: rgb(29, 36, 69);
   --pf-global--BackgroundColor--dark-200: #0ff;
   --pf-global--BackgroundColor--dark-300: #0ff;
   --pf-global--BackgroundColor--dark-400: #0ff;
   --pf-global--BackgroundColor--dark-transparent-100: rgba(3, 3, 3, 0.62);
-  --pf-global--BackgroundColor--dark-transparent-200: rgba(3, 3, 3, 0.32);
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* Text color */
+  /* Header */
   --pf-global--Color--100: rgb(29, 36, 69);
-  --pf-global--Color--200: rgb(163, 166, 166);
+  /* language */
+  --pf-global--Color--200: #0ff;
   --pf-global--Color--300: #0ff;
   --pf-global--Color--400: #0ff;
   /* on-primary */
-  --pf-global--Color--light-100: rgb(29, 36, 69);
+  --pf-global--Color--light-100: rgb(248, 248, 248);
   --pf-global--Color--light-200: #0ff;
   --pf-global--Color--light-300: #0ff;
+  --pf-global--Color--dark-100: #0ff;
   /* icon */
-  --pf-global--Color--dark-100: #151515;
-  --pf-global--Color--dark-200: #6a6e73;
+  --pf-global--Color--dark-200: #0ff;
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* active */
   --pf-global--active-color--100: rgb(109, 220, 145);
-  --pf-global--active-color--200: #0ff;
   --pf-global--active-color--300: #0ff;
   --pf-global--active-color--400: rgb(109, 220, 145);
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* disabled */
   --pf-global--disabled-color--100: rgb(163, 166, 166);
-  --pf-global--disabled-color--200: rgb(248, 248, 248);
   --pf-global--disabled-color--300: #0ff;
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* primary */
   --pf-global--primary-color--100: rgb(109, 220, 145);
-  --pf-global--primary-color--200: rgb(132, 225, 162);
   --pf-global--primary-color--light-100: rgb(109, 220, 145);
   --pf-global--primary-color--dark-100: rgb(49, 55, 81);
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* secondary */
   --pf-global--secondary-color--100: #0ff;
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* default */
   --pf-global--default-color--100: #0ff;
-  --pf-global--default-color--200: #0ff;
   --pf-global--default-color--300: #0ff;
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* success */
   --pf-global--success-color--100: rgb(109, 220, 145);
-  --pf-global--success-color--200: #0ff;
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* info */
   --pf-global--info-color--100: #0ff;
-  --pf-global--info-color--200: #0ff;
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* warning */
   --pf-global--warning-color--100: rgb(240, 231, 218);
-  --pf-global--warning-color--200: #0ff;
+  /* ------------------------------------------------------------------------------------------------------------------------------- */
   /* danger */
   --pf-global--danger-color--100: rgb(179, 51, 73);
-  --pf-global--danger-color--200: rgb(179, 51, 73);
   --pf-global--danger-color--300: rgb(179, 51, 73);
+
+  /* change fontSizes */
+  --pf-global--FontSize--4xl: 2.25rem;
+  --pf-global--FontSize--3xl: 1.75rem;
+  --pf-global--FontSize--2xl: 1.5rem;
+  --pf-global--FontSize--xl: 1.25rem;
+  --pf-global--FontSize--lg: 1.125rem;
+  --pf-global--FontSize--md: 1rem;
+  --pf-global--FontSize--sm: 0.875rem;
+  --pf-global--FontSize--xs: 0.75rem;
+  --pf-global--FontWeight--light: 300;
+  --pf-global--FontWeight--normal: 400;
+  --pf-global--FontWeight--semi-bold: 700;
+  --pf-global--FontWeight--overpass--semi-bold: 500;
+  --pf-global--FontWeight--bold: 700;
+  --pf-global--FontWeight--overpass--bold: 600;
 }
+
+body {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
 .kcHtmlClass body {
   background: url(https://a.storyblok.com/f/116218/3840x960/5693b14f00/numbersfigures-desktop.png/m/)
     no-repeat left bottom fixed;
@@ -68,4 +109,40 @@
 
 .kcHeaderWrapperClass {
   color: var(--pf-global--Color--100);
+}
+.kcFormCardClass {
+  background-color: var(--pf-global--BackgroundColor--100);
+  border: none;
+}
+
+.kcInputClass {
+  border-radius: 1000px;
+  border: none;
+  /* Drop Shadow: [5, 18, 56, 0.10] | Offset: 0, 0 | Spread: 0 | Blur: 5 */
+  /* box-shadow: 5px 18px 56px rgba(0, 0, 0, 0.1); */
+}
+
+.kcInputGroup {
+  background-color: red;
+  background: none;
+}
+
+.kcFormPasswordVisibilityButtonClass {
+  border-radius: 1000px;
+  border: none;
+}
+
+.kcButtonClass {
+  border-radius: 1000px;
+  box-shadow: 0px 0px 5px 0px rgba(29, 36, 69, 0.1);
+}
+
+.kcFormPasswordVisibilityIconShow {
+  border: none;
+}
+
+.kcButtonClass:hover {
+  /* 0px 2px 6px 0px #1d244540; */
+  box-shadow: 0px 2px 6px 0px rgba(29, 36, 69, 0.25);
+  background-color: var(--pf-global--primary-color--100);
 }
