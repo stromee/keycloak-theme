@@ -198,3 +198,8 @@ body {
 .kcFormSocialAccountListButtonClass::after {
   all: unset;
 }
+
+
+.kcHtmlClass a {
+  color: var(--stromee-navy-100)
+}
