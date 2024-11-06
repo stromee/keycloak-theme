@@ -31,7 +31,7 @@ jobs:
         run: ls -l ./dist_keycloak
 
       - name: Upload dist_keycloak artifacts to release
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: dist_keycloak-artifacts
           path: ./dist_keycloak/keycloak-theme-for-kc-22-and-above.jar
