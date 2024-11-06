@@ -193,14 +193,18 @@ body {
   background-color: var(--pf-global--primary-color--100);
 }
 
-/* Login with google kein plan wie das aussieht und obs tut*/
 .kcFormSocialAccountListButtonClass {
-  background-color: #4285f4 !important;
+  background-color: #ffffff !important;
   color: var(--stromee-navy-100);
   border-radius: 1000px;
-  border: none;
+  border: 1px solid var(--stromee-navy-100);
   text-align: center;
   height: 2rem;
+  line-height: 1.3rem;
+}
+
+.kcCommonLogoIdP {
+  line-height: 1.2rem;
 }
 
 .kcFormSocialAccountListButtonClass:hover {
