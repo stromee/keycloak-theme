@@ -197,7 +197,7 @@ body {
   background-color: #ffffff !important;
   color: var(--stromee-navy-100);
   border-radius: 1000px;
-  border: 1px solid var(--stromee-navy-100);
+  border: 1px solid var(--stromee-navy-100) !important;
   text-align: center;
   height: 2rem;
   line-height: 1.3rem;
